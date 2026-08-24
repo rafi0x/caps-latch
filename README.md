@@ -12,13 +12,19 @@ you almost never need it, and it ruins a sentence every time you brush it.
 ## Install
 
 ```bash
-sudo apt install python3-evdev
+curl -fsSL https://raw.githubusercontent.com/rafi0x/caps-latch/master/install.sh | sudo bash
+```
+
+That's it, it's already running. It grabs what it needs and sets up the
+service for you.
+
+Rather do it by hand:
+
+```bash
 git clone https://github.com/rafi0x/caps-latch
 cd caps-latch
 sudo ./install.sh
 ```
-
-That's it, it's already running.
 
 ## Change the delay
 
@@ -56,7 +62,7 @@ You need Linux with `uinput`, `python3-evdev`, systemd, and root.
 ## Uninstall
 
 ```bash
-sudo ./uninstall.sh
+curl -fsSL https://raw.githubusercontent.com/rafi0x/caps-latch/master/uninstall.sh | sudo bash
 ```
 
 ## License
